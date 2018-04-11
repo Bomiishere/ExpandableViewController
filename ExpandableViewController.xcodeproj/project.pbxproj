@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F420C71E206D275D007791F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C71D206D275D007791F6 /* AppDelegate.m */; };
+		F420C721206D275D007791F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C720206D275D007791F6 /* ViewController.m */; };
+		F420C724206D275D007791F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F420C722206D275D007791F6 /* Main.storyboard */; };
+		F420C726206D275D007791F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F420C725206D275D007791F6 /* Assets.xcassets */; };
+		F420C729206D275D007791F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F420C727206D275D007791F6 /* LaunchScreen.storyboard */; };
+		F420C72C206D275D007791F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C72B206D275D007791F6 /* main.m */; };
+		F420C736206D275D007791F6 /* ExpandableViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C735206D275D007791F6 /* ExpandableViewControllerTests.m */; };
+		F420C741206D275D007791F6 /* ExpandableViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C740206D275D007791F6 /* ExpandableViewControllerUITests.m */; };
+		F420C756206D27C1007791F6 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C750206D27C1007791F6 /* InfoViewController.m */; };
+		F420C76F206D28A0007791F6 /* Expandable.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C75A206D28A0007791F6 /* Expandable.m */; };
+		F420C770206D28A0007791F6 /* ExpandableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C75C206D28A0007791F6 /* ExpandableViewController.m */; };
+		F420C771206D28A0007791F6 /* UIViewController+Subview.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C75F206D28A0007791F6 /* UIViewController+Subview.m */; };
+		F420C772206D28A0007791F6 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C760206D28A0007791F6 /* UIView+AutoLayout.m */; };
+		F420C773206D28A0007791F6 /* UITableViewCell+Subview.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C763206D28A0007791F6 /* UITableViewCell+Subview.m */; };
+		F420C774206D28A0007791F6 /* MapBankInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C766206D28A0007791F6 /* MapBankInfoTableViewCell.m */; };
+		F420C775206D28A0007791F6 /* MapGetCardNumberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C768206D28A0007791F6 /* MapGetCardNumberTableViewCell.m */; };
+		F420C776206D28A0007791F6 /* MapFunctionsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C769206D28A0007791F6 /* MapFunctionsTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F420C732206D275D007791F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F420C711206D275D007791F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F420C718206D275D007791F6;
+			remoteInfo = ExpandableViewController;
+		};
+		F420C73D206D275D007791F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F420C711206D275D007791F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F420C718206D275D007791F6;
+			remoteInfo = ExpandableViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F420C719206D275D007791F6 /* ExpandableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F420C71C206D275D007791F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F420C71D206D275D007791F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F420C71F206D275D007791F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F420C720206D275D007791F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F420C723206D275D007791F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F420C725206D275D007791F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F420C728206D275D007791F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F420C72A206D275D007791F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F420C72B206D275D007791F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F420C731206D275D007791F6 /* ExpandableViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpandableViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F420C735206D275D007791F6 /* ExpandableViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandableViewControllerTests.m; sourceTree = "<group>"; };
+		F420C737206D275D007791F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F420C73C206D275D007791F6 /* ExpandableViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpandableViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F420C740206D275D007791F6 /* ExpandableViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandableViewControllerUITests.m; sourceTree = "<group>"; };
+		F420C742206D275D007791F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F420C750206D27C1007791F6 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		F420C753206D27C1007791F6 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		F420C75A206D28A0007791F6 /* Expandable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Expandable.m; sourceTree = "<group>"; };
+		F420C75B206D28A0007791F6 /* ExpandableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableViewController.h; sourceTree = "<group>"; };
+		F420C75C206D28A0007791F6 /* ExpandableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandableViewController.m; sourceTree = "<group>"; };
+		F420C75D206D28A0007791F6 /* Expandable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expandable.h; sourceTree = "<group>"; };
+		F420C75F206D28A0007791F6 /* UIViewController+Subview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Subview.m"; sourceTree = "<group>"; };
+		F420C760206D28A0007791F6 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		F420C761206D28A0007791F6 /* UITableViewCell+Subview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Subview.h"; sourceTree = "<group>"; };
+		F420C762206D28A0007791F6 /* UIViewController+Subview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Subview.h"; sourceTree = "<group>"; };
+		F420C763206D28A0007791F6 /* UITableViewCell+Subview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Subview.m"; sourceTree = "<group>"; };
+		F420C764206D28A0007791F6 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		F420C766206D28A0007791F6 /* MapBankInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapBankInfoTableViewCell.m; sourceTree = "<group>"; };
+		F420C767206D28A0007791F6 /* MapFunctionsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapFunctionsTableViewCell.h; sourceTree = "<group>"; };
+		F420C768206D28A0007791F6 /* MapGetCardNumberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapGetCardNumberTableViewCell.m; sourceTree = "<group>"; };
+		F420C769206D28A0007791F6 /* MapFunctionsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapFunctionsTableViewCell.m; sourceTree = "<group>"; };
+		F420C76A206D28A0007791F6 /* MapBankInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapBankInfoTableViewCell.h; sourceTree = "<group>"; };
+		F420C76B206D28A0007791F6 /* MapGetCardNumberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapGetCardNumberTableViewCell.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F420C716206D275D007791F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F420C72E206D275D007791F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F420C739206D275D007791F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F420C710206D275D007791F6 = {
+			isa = PBXGroup;
+			children = (
+				F420C71B206D275D007791F6 /* ExpandableViewController */,
+				F420C734206D275D007791F6 /* ExpandableViewControllerTests */,
+				F420C73F206D275D007791F6 /* ExpandableViewControllerUITests */,
+				F420C71A206D275D007791F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F420C71A206D275D007791F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F420C719206D275D007791F6 /* ExpandableViewController.app */,
+				F420C731206D275D007791F6 /* ExpandableViewControllerTests.xctest */,
+				F420C73C206D275D007791F6 /* ExpandableViewControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F420C71B206D275D007791F6 /* ExpandableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F420C75E206D28A0007791F6 /* Extension */,
+				F420C71C206D275D007791F6 /* AppDelegate.h */,
+				F420C71D206D275D007791F6 /* AppDelegate.m */,
+				F420C71F206D275D007791F6 /* ViewController.h */,
+				F420C720206D275D007791F6 /* ViewController.m */,
+				F420C753206D27C1007791F6 /* InfoViewController.h */,
+				F420C750206D27C1007791F6 /* InfoViewController.m */,
+				F420C759206D28A0007791F6 /* ExpandableViewController */,
+				F420C765206D28A0007791F6 /* Cells */,
+				F420C722206D275D007791F6 /* Main.storyboard */,
+				F420C725206D275D007791F6 /* Assets.xcassets */,
+				F420C727206D275D007791F6 /* LaunchScreen.storyboard */,
+				F420C72A206D275D007791F6 /* Info.plist */,
+				F420C72B206D275D007791F6 /* main.m */,
+			);
+			path = ExpandableViewController;
+			sourceTree = "<group>";
+		};
+		F420C734206D275D007791F6 /* ExpandableViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F420C735206D275D007791F6 /* ExpandableViewControllerTests.m */,
+				F420C737206D275D007791F6 /* Info.plist */,
+			);
+			path = ExpandableViewControllerTests;
+			sourceTree = "<group>";
+		};
+		F420C73F206D275D007791F6 /* ExpandableViewControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F420C740206D275D007791F6 /* ExpandableViewControllerUITests.m */,
+				F420C742206D275D007791F6 /* Info.plist */,
+			);
+			path = ExpandableViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		F420C759206D28A0007791F6 /* ExpandableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F420C75D206D28A0007791F6 /* Expandable.h */,
+				F420C75A206D28A0007791F6 /* Expandable.m */,
+				F420C75B206D28A0007791F6 /* ExpandableViewController.h */,
+				F420C75C206D28A0007791F6 /* ExpandableViewController.m */,
+			);
+			path = ExpandableViewController;
+			sourceTree = "<group>";
+		};
+		F420C75E206D28A0007791F6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F420C75F206D28A0007791F6 /* UIViewController+Subview.m */,
+				F420C760206D28A0007791F6 /* UIView+AutoLayout.m */,
+				F420C761206D28A0007791F6 /* UITableViewCell+Subview.h */,
+				F420C762206D28A0007791F6 /* UIViewController+Subview.h */,
+				F420C763206D28A0007791F6 /* UITableViewCell+Subview.m */,
+				F420C764206D28A0007791F6 /* UIView+AutoLayout.h */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F420C765206D28A0007791F6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F420C76A206D28A0007791F6 /* MapBankInfoTableViewCell.h */,
+				F420C766206D28A0007791F6 /* MapBankInfoTableViewCell.m */,
+				F420C767206D28A0007791F6 /* MapFunctionsTableViewCell.h */,
+				F420C769206D28A0007791F6 /* MapFunctionsTableViewCell.m */,
+				F420C76B206D28A0007791F6 /* MapGetCardNumberTableViewCell.h */,
+				F420C768206D28A0007791F6 /* MapGetCardNumberTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F420C718206D275D007791F6 /* ExpandableViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F420C745206D275D007791F6 /* Build configuration list for PBXNativeTarget "ExpandableViewController" */;
+			buildPhases = (
+				F420C715206D275D007791F6 /* Sources */,
+				F420C716206D275D007791F6 /* Frameworks */,
+				F420C717206D275D007791F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExpandableViewController;
+			productName = ExpandableViewController;
+			productReference = F420C719206D275D007791F6 /* ExpandableViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F420C730206D275D007791F6 /* ExpandableViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F420C748206D275D007791F6 /* Build configuration list for PBXNativeTarget "ExpandableViewControllerTests" */;
+			buildPhases = (
+				F420C72D206D275D007791F6 /* Sources */,
+				F420C72E206D275D007791F6 /* Frameworks */,
+				F420C72F206D275D007791F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F420C733206D275D007791F6 /* PBXTargetDependency */,
+			);
+			name = ExpandableViewControllerTests;
+			productName = ExpandableViewControllerTests;
+			productReference = F420C731206D275D007791F6 /* ExpandableViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F420C73B206D275D007791F6 /* ExpandableViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F420C74B206D275D007791F6 /* Build configuration list for PBXNativeTarget "ExpandableViewControllerUITests" */;
+			buildPhases = (
+				F420C738206D275D007791F6 /* Sources */,
+				F420C739206D275D007791F6 /* Frameworks */,
+				F420C73A206D275D007791F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F420C73E206D275D007791F6 /* PBXTargetDependency */,
+			);
+			name = ExpandableViewControllerUITests;
+			productName = ExpandableViewControllerUITests;
+			productReference = F420C73C206D275D007791F6 /* ExpandableViewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F420C711206D275D007791F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Bomi;
+				TargetAttributes = {
+					F420C718206D275D007791F6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F420C730206D275D007791F6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F420C718206D275D007791F6;
+					};
+					F420C73B206D275D007791F6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F420C718206D275D007791F6;
+					};
+				};
+			};
+			buildConfigurationList = F420C714206D275D007791F6 /* Build configuration list for PBXProject "ExpandableViewController" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F420C710206D275D007791F6;
+			productRefGroup = F420C71A206D275D007791F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F420C718206D275D007791F6 /* ExpandableViewController */,
+				F420C730206D275D007791F6 /* ExpandableViewControllerTests */,
+				F420C73B206D275D007791F6 /* ExpandableViewControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F420C717206D275D007791F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F420C729206D275D007791F6 /* LaunchScreen.storyboard in Resources */,
+				F420C726206D275D007791F6 /* Assets.xcassets in Resources */,
+				F420C724206D275D007791F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F420C72F206D275D007791F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F420C73A206D275D007791F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F420C715206D275D007791F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F420C771206D28A0007791F6 /* UIViewController+Subview.m in Sources */,
+				F420C772206D28A0007791F6 /* UIView+AutoLayout.m in Sources */,
+				F420C721206D275D007791F6 /* ViewController.m in Sources */,
+				F420C773206D28A0007791F6 /* UITableViewCell+Subview.m in Sources */,
+				F420C776206D28A0007791F6 /* MapFunctionsTableViewCell.m in Sources */,
+				F420C72C206D275D007791F6 /* main.m in Sources */,
+				F420C770206D28A0007791F6 /* ExpandableViewController.m in Sources */,
+				F420C756206D27C1007791F6 /* InfoViewController.m in Sources */,
+				F420C775206D28A0007791F6 /* MapGetCardNumberTableViewCell.m in Sources */,
+				F420C71E206D275D007791F6 /* AppDelegate.m in Sources */,
+				F420C774206D28A0007791F6 /* MapBankInfoTableViewCell.m in Sources */,
+				F420C76F206D28A0007791F6 /* Expandable.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F420C72D206D275D007791F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F420C736206D275D007791F6 /* ExpandableViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F420C738206D275D007791F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F420C741206D275D007791F6 /* ExpandableViewControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F420C733206D275D007791F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F420C718206D275D007791F6 /* ExpandableViewController */;
+			targetProxy = F420C732206D275D007791F6 /* PBXContainerItemProxy */;
+		};
+		F420C73E206D275D007791F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F420C718206D275D007791F6 /* ExpandableViewController */;
+			targetProxy = F420C73D206D275D007791F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F420C722206D275D007791F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F420C723206D275D007791F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F420C727206D275D007791F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F420C728206D275D007791F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F420C743206D275D007791F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F420C744206D275D007791F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F420C746206D275D007791F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RG55XLA874;
+				INFOPLIST_FILE = ExpandableViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PrototypeC.ExpandableViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F420C747206D275D007791F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RG55XLA874;
+				INFOPLIST_FILE = ExpandableViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PrototypeC.ExpandableViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F420C749206D275D007791F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RG55XLA874;
+				INFOPLIST_FILE = ExpandableViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PrototypeC.ExpandableViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExpandableViewController.app/ExpandableViewController";
+			};
+			name = Debug;
+		};
+		F420C74A206D275D007791F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RG55XLA874;
+				INFOPLIST_FILE = ExpandableViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PrototypeC.ExpandableViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExpandableViewController.app/ExpandableViewController";
+			};
+			name = Release;
+		};
+		F420C74C206D275D007791F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RG55XLA874;
+				INFOPLIST_FILE = ExpandableViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PrototypeC.ExpandableViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ExpandableViewController;
+			};
+			name = Debug;
+		};
+		F420C74D206D275D007791F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RG55XLA874;
+				INFOPLIST_FILE = ExpandableViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PrototypeC.ExpandableViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ExpandableViewController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F420C714206D275D007791F6 /* Build configuration list for PBXProject "ExpandableViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F420C743206D275D007791F6 /* Debug */,
+				F420C744206D275D007791F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F420C745206D275D007791F6 /* Build configuration list for PBXNativeTarget "ExpandableViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F420C746206D275D007791F6 /* Debug */,
+				F420C747206D275D007791F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F420C748206D275D007791F6 /* Build configuration list for PBXNativeTarget "ExpandableViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F420C749206D275D007791F6 /* Debug */,
+				F420C74A206D275D007791F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F420C74B206D275D007791F6 /* Build configuration list for PBXNativeTarget "ExpandableViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F420C74C206D275D007791F6 /* Debug */,
+				F420C74D206D275D007791F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F420C711206D275D007791F6 /* Project object */;
+}
