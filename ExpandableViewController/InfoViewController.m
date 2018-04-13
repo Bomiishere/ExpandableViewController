@@ -123,12 +123,16 @@
 
 #pragma mark - ExpandableChildDatasource
 
-- (CGFloat)expandableViewControllerEntireHeight {
-    return self.view.superview.frame.size.height - 20;
+- (CGFloat)expandableViewControllerOriginHeight {
+    return 0;
 }
 
 - (CGFloat)expandableViewControllerHalfHeight {
     return 110;
+}
+
+- (CGFloat)expandableViewControllerEntireHeightOffset {
+    return 20;
 }
 
 #pragma mark - Private

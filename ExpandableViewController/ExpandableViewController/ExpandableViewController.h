@@ -25,8 +25,9 @@
 
 @protocol ExpandableChildDataSource <NSObject>
 @optional
-- (CGFloat)expandableViewControllerEntireHeight;
+- (CGFloat)expandableViewControllerEntireHeightOffset;
 - (CGFloat)expandableViewControllerHalfHeight;
+- (CGFloat)expandableViewControllerOriginHeight;
 @end
 
 @interface ExpandableViewController : UIViewController<ExpandableChildDelegate, ExpandableChildDataSource>
@@ -37,6 +38,9 @@
 @property (nonatomic, assign) BOOL isDraggable;
 @property (nonatomic, assign) BOOL isRoundCorner;
 @property (nonatomic, assign) BOOL isShadow;
+@property (nonatomic, assign) CGFloat originHeight;
+@property (nonatomic, assign) CGFloat halfHeight;
+@property (nonatomic, assign) CGFloat entireHeightOffset;
 
 - (void)displayWithState:(ExpandState)expandState;
 

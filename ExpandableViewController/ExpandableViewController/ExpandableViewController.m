@@ -18,7 +18,7 @@ __unused static CGFloat const kDisplayLinkDuration = 2.5;
 @property (nonatomic, strong) id <ExpandableChildDataSource> childDatasource;
 
 @property (nonatomic, strong) NSLayoutConstraint *draggableViewTopConstraint;
-@property (nonatomic, assign) double superViewHeight;
+@property (nonatomic, assign) CGFloat superViewHeight;
 
 ///Tap & Expand
 @property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
@@ -27,7 +27,7 @@ __unused static CGFloat const kDisplayLinkDuration = 2.5;
 @property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
 
 ///PanGesture - store height
-@property (nonatomic, assign) double storedHeight;
+@property (nonatomic, assign) CGFloat storedHeight;
 
 //display link
 @property (nonatomic, strong) CADisplayLink *displayLink;
@@ -47,6 +47,10 @@ __unused static CGFloat const kDisplayLinkDuration = 2.5;
         self.childDelegate = self;
         self.childDatasource = self;
         
+        self.originHeight = 0;
+        self.halfHeight = 0;
+        self.entireHeightOffset = 0;
+        
         self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(expandWithTapGesture:)];
         self.storedHeight = 0.0f;
         self.panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(draggingWithPanGesture:)];
@@ -54,7 +58,7 @@ __unused static CGFloat const kDisplayLinkDuration = 2.5;
     return self;
 }
 
--(void)displayWithState:(ExpandState)expandState {
+- (void)displayWithState:(ExpandState)expandState {
     //guard if no superview
     if (!self.view.superview) {
         return;
@@ -77,6 +81,7 @@ __unused static CGFloat const kDisplayLinkDuration = 2.5;
 
 - (void)willMoveToParentViewController:(UIViewController *)parent {
     [self initAutoLayout];
+    [self expandWithState:ExpandStateNone];
 }
 
 #pragma mark - ExpandStateExist
@@ -85,23 +90,15 @@ __unused static CGFloat const kDisplayLinkDuration = 2.5;
     CGFloat expandHeight;
     switch (expandState) {
         case ExpandStateNone:
-            expandHeight = 0;
+                expandHeight = self.originHeight;
             break;
             
         case ExpandStateHalf:
-            if ([self.childDatasource respondsToSelector:@selector(expandableViewControllerHalfHeight)]) {
-                expandHeight = [self.childDatasource expandableViewControllerHalfHeight];
-            } else {
-                expandHeight = 0;
-            }
+                expandHeight = self.halfHeight;
             break;
             
         case ExpandStateEntire:
-            if ([self.childDatasource respondsToSelector:@selector(expandableViewControllerEntireHeight)]) {
-                expandHeight = [self.childDatasource expandableViewControllerEntireHeight];
-            } else {
-                expandHeight = self.superViewHeight;
-            }
+                expandHeight = [self superViewHeight] - self.entireHeightOffset;
             break;
     }
     self.draggableViewTopConstraint.constant = -expandHeight;
@@ -113,8 +110,32 @@ __unused static CGFloat const kDisplayLinkDuration = 2.5;
 
 #pragma mark - Setter, Getter
 
-- (double)superViewHeight {
-    return self.view.superview.frame.size.height;
+- (CGFloat)originHeight {
+    if ([_childDatasource respondsToSelector:@selector(expandableViewControllerOriginHeight)]) {
+        return [_childDatasource expandableViewControllerOriginHeight];
+    } else {
+        return _originHeight;
+    }
+}
+
+- (CGFloat)halfHeight {
+    if ([_childDatasource respondsToSelector:@selector(expandableViewControllerHalfHeight)]) {
+        return [_childDatasource expandableViewControllerHalfHeight];
+    } else {
+        return _halfHeight;
+    }
+}
+
+- (CGFloat)entireHeightOffset {
+    if ([_childDatasource respondsToSelector:@selector(expandableViewControllerEntireHeightOffset)]) {
+        return [_childDatasource expandableViewControllerEntireHeightOffset];
+    } else {
+        return _entireHeightOffset;
+    }
+}
+
+- (CGFloat)superViewHeight {
+    return self.view.superview.bounds.size.height;
 }
 
 - (void)setIsRoundCorner:(BOOL)isRoundCorner {
@@ -227,7 +248,7 @@ __unused static CGFloat const kDisplayLinkDuration = 2.5;
     } completion:^(BOOL finished) {}];
     
     //delegate percent of animation
-    CGFloat percentage = (transitionY)/[self.childDatasource expandableViewControllerEntireHeight]*2; // multiple 2 for half way entire animation
+    CGFloat percentage = (transitionY)/[self superViewHeight]*2; // multiple 2 for half way entire animation
     if ([self.childDelegate respondsToSelector:@selector(expandableViewControllerDidDragWithPercentage:)]) {
         [self.childDelegate expandableViewControllerDidDragWithPercentage:percentage];
     }
