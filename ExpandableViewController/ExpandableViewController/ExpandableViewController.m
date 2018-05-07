@@ -81,7 +81,7 @@ __unused static CGFloat const kDisplayLinkDuration = 2.5;
 
 - (void)willMoveToParentViewController:(UIViewController *)parent {
     [self initAutoLayout];
-    [self expandWithState:ExpandStateNone];
+    [parent.view layoutIfNeeded];
 }
 
 #pragma mark - ExpandStateExist
@@ -277,7 +277,7 @@ __unused static CGFloat const kDisplayLinkDuration = 2.5;
 
 - (void)initAutoLayout {
     self.view.translatesAutoresizingMaskIntoConstraints = NO;
-    self.draggableViewTopConstraint = [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view.superview attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0];
+    self.draggableViewTopConstraint = [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view.superview attribute:NSLayoutAttributeBottom multiplier:1.0 constant:self.originHeight];
     [self.view.superview addConstraint: self.draggableViewTopConstraint];
     [self.view.superview addConstraint: [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view.superview attribute:NSLayoutAttributeBottom multiplier:1.0 constant:10]];
     [self.view.superview addConstraint: [NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view.superview attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0]];
